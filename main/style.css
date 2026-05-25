@@ -3,6 +3,7 @@
   padding: 0;
   box-sizing: border-box;
 }
+
 body{
   margin-top: 200px;
   display: flex;
@@ -12,24 +13,30 @@ body{
   font-family: "Roboto", sans-serif;
   text-align: center;
 }
+
 div {
   width: 300px;
   height: 400px;
   background-color: #f0f0f0;
   border: 2px solid #333;
   padding: 40px;
-  margin: 15px auto;
+  margin: 15px;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  min-height: 400px;
+  max-height: 400px;
 }
+
 div:hover {
   background-color: rgb(250, 44, 113);
   transition: all 500ms ease-in-out;
   color: white;
+  border-color: transparent;
+  
+  
 }
-
 
 div img {
   display: flex;
@@ -42,7 +49,6 @@ div:hover img{
   transition: all 500ms ease-in-out;
   filter: invert(100%);
 }
-
 
 a{
   display: flex;
@@ -59,6 +65,7 @@ a{
   border: 2px solid #000000;
   border-radius: 999px;
 }
+
 div:hover a{
   border: transparent;
   background-color: white;
